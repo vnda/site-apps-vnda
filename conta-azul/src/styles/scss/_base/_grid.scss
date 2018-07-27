@@ -7,6 +7,12 @@
   min-height: 100%; /* moved from .container */
   margin: 0 auto;
   padding: 0; 
+
+  &.full {
+    width: 100% !important;
+    max-width: inherit !important;
+    min-width: 100% !important;
+  }
 }
 
 .grid {
@@ -192,6 +198,30 @@
     img {
       width: 100%;
     }   
+}
+
+.width {
+
+  &.half {
+    width: 50%;
+  }
+
+  &.third {
+    width: 33.3%;
+  } 
+
+  &.double-third{
+    width: 66.6%;
+  }
+
+  &.forth {
+    width: 25%;
+  } 
+
+  &.full {
+    width: 100%;
+  }
+
 }
 
 /*substitui linhamento padrão do container por itens flexíveis individuais*/

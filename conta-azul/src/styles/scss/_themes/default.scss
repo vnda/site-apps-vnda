@@ -1,3 +1,13 @@
+main{
+	position: relative;
+	z-index: 1;
+}
+
+main, .content {
+	height: 100%;	
+
+}
+
 .section {
 
 	padding: 60px 0;
@@ -401,12 +411,12 @@
 	color: $clr-white;
 
 	&.__header {
-		background: #efefef;
+		background: #f88d5b;
     border: 0;
     font-weight: 700;
     padding: 15px 13px;
     font-size: 18px;
-    color: #999a99;
+    color: #efefef;
     text-transform: none;
     letter-spacing: inherit;
     margin: 0;
@@ -471,6 +481,20 @@
 
 	&--large {
 		font-size: 2.2em;
+	}
+
+	&.calling {
+
+    font-size: 38px !important;
+    color: $clr-dark-orange;
+    text-align: center;
+    margin-top: 70px;
+
+    small{
+    	color: $clr-grafiti-char !important;
+    	line-height: 1;
+    }
+
 	}
 }
 
