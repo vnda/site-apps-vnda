@@ -1,0 +1,162 @@
+
+<template>
+
+	<div class="content">
+
+		<section class="section">
+
+			<div class="grid">
+
+				<div class="grid__item">
+
+					<h1> Contact </h1>
+
+				</div>
+
+				<form id="formContact" class="form-rows" enctype='application/json' novalidate>
+
+					<div class="grid__item width--third">
+
+						<div class="card">
+
+							<label for="first_name">First Name</label>
+							<input type="text" name="first_name" pattern="[a-zA-Z]+">
+							<span class="error" id="first_name" aria-live="polite">Não use números, espaços ou caraceters especiais</span>
+
+							<label for="last_name">Last Name</label>
+							<input type="text" name="last_name" pattern="[a-zA-Z]+">	
+							<span class="error" id="last_name" aria-live="polite">Não use números, espaços ou caraceters especiais</span>					
+
+							<label for="email">Email Address</label>
+							<input type="email" name="email">
+							<span class="error" id="email" aria-live="polite">Declare um email válido</span>
+
+							<label for="country">Country</label>
+							<select name="country">
+								<option>Choose a country</option>
+								<option>France</option>
+								<option>Italy</option>
+								<option>Portugal</option>
+							</select>
+							<span class="error" id="country" aria-live="polite">Escolha seu pais</span>
+
+							<label for="bio">Biography</label>
+							<textarea name="bio" rows="13"></textarea>
+							<span class="error" id="bio" aria-live="polite">Informe uma biografia</span>
+
+						</div>
+
+					</div>
+
+					<div class="grid__item width--third">
+
+						<div class="card">
+
+							<label for="phone">Phone Number</label>
+							<input type="tel" name="phone" placeholder="(51) 98119-3147" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}">
+							<span class="error" id="phone" aria-live="polite">Informe um número de telefone válido (ex. (51) 98119-3147)</span>
+
+							<label for="affiliations">Affiliations</label>
+							<textarea name="affiliations" rows="11"></textarea>
+							<span class="error" id="affiliations" aria-live="polite">Campo obrigatório</span>
+
+							<label>Occupation</label>
+											
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="frontend"  name="frontend">
+									<span class="checkmark"></span>
+							   		<span class="checklabel">Front-end</span>
+							  	</label>
+							</div>						
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="backend"  name="backend">
+									<span class="checkmark"></span>
+							   		<span class="checklabel">Back-end</span>
+							  	</label>
+							</div>
+							<span class="error" id="occupation" aria-live="polite">Informe pelo menos uma ocupação</span>								
+
+							<br>						
+
+							<label for="birthday">Birthday</label>
+							<input type="date" name="birthday" placeholder="">
+							<span class="error" id="birthday" aria-live="polite">Imforme sua data de aniverssário</span>
+
+							<label for="gagdet">Favorite Gadget</label>
+							<input type="text" name="gagdet" placeholder="" pattern="[a-zA-Z]+">
+							<span class="error" id="gagdet" aria-live="polite">Campo obrigatório</span>
+
+						</div>
+
+					</div>
+
+					<div class="grid__item width--third">
+
+						<div class="card">
+
+							<label>Type of Talent</label>						
+
+							<div class="radio">
+								<label>
+									<input type="radio" value="ninjasilence" name="talent">
+									<span class="radiomark"></span>
+							   		<span class="radiolabel">Ninja silence</span>
+							  	</label>
+							</div>
+
+							<div class="radio">
+								<label>
+									<input type="radio" value="sumopower" name="talent">
+									<span class="radiomark"></span>
+							   		<span class="radiolabel">Sumo power</span>
+							  	</label>
+							</div>
+
+							<div class="radio">
+								<label>
+									<input type="radio" value="samuraiprecision" name="talent">
+									<span class="radiomark"></span>
+							   		<span class="radiolabel">Samurai precision</span>
+							  	</label>
+							</div>
+							<span class="error" id="talent" aria-live="polite">Escolha um talento</span>	
+
+							<br>				
+
+							<label for="drink">Favorite Drink</label>
+							<input type="text" name="drink" placeholder="">
+							<span class="error" id="drink" aria-live="polite">Campo obrigatório</span>
+
+							<label for="power">Special power</label>
+							<input type="text" name="power" placeholder="" pattern="[a-zA-Z]+">
+							<span class="error" id="power" aria-live="polite">Campo obrigatório</span>
+
+							<label for="weapon">Weapon of choice</label>
+							<input type="text" name="weapon" placeholder="" pattern="[a-zA-Z]+">
+							<span class="error" id="weapon" aria-live="polite">Campo obrigatório</span>
+
+							<label for="comments">Comments</label>
+							<textarea name="comments" rows="10" pattern="[a-zA-Z]+"></textarea>
+							<span class="error" id="comments" aria-live="polite">Campo obrigatório</span>	
+
+						</div>
+
+					</div>
+
+					<div class="grid__item">
+						<button type="submit" class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s"><span>Submit</span></button>
+					</div>
+
+				</form>	
+
+			</div>
+
+		</section>
+
+	</div>
+
+</template>
+

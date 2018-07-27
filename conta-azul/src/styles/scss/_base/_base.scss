@@ -1,0 +1,95 @@
+
+/* base */
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after {display: table;  content: ''; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+html, body {	
+	height: 100%;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+}
+
+a, button {
+
+	outline: none;	
+	text-decoration: none;
+
+	&:hover {		
+		outline: none;	
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+input, textarea, select {    
+    background-image: none !important;    
+    outline: none; 
+}
+
+input[type=checkbox],
+input[type=radio] {
+	appearance: none !important;
+	-webkit-appearance: none !important;    
+	-moz-appearance: none !important;
+	-ms-appearance: none !important;
+	-o-appearance: none !important;
+}
+
+button {
+  background-color: transparent;
+  border-radius: none;
+  text-decoration: none;
+  outline: 0;
+}
+
+label {}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;  
+}
+
+ul {
+
+	list-style: none;
+	padding: 0;
+	margin: 0;		
+
+	&.inline li {		
+		float: left;
+	    display: inline-block;
+	}
+
+}
