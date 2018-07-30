@@ -1,0 +1,113 @@
+
+/* owl carousel */
+
+#owl-panels {
+
+  margin: 100px 0 0 0;
+
+  display: block;
+
+	.item {
+
+		img{
+    		display: block;
+    		width: 100%;
+    		height: auto;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+#owl-marcas {
+
+	.item {
+
+		img{
+    		display: block;
+    		width: 100%;
+    		height: auto;
+			padding: 0 18px;
+
+			-webkit-filter: grayscale(100%);
+		    filter: grayscale(100%);
+			border: 1px solid transparent;
+			opacity: 0.5;
+		    -webkit-transition: 0.3s;
+
+			&:hover {
+
+				border: 1px solid $clr-pink;
+				cursor: pointer;
+				-webkit-filter: grayscale(0);
+			    filter: grayscale(0);
+				opacity: 1;
+			    -webkit-transition: 0.3s;
+			}
+		}
+	}
+}
+
+#owl-instagram {
+
+	.item {
+
+		img{
+    		display: block;
+    		width: 100%;
+    		height: auto;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+#owl-shop {
+
+	.item {
+
+		img{
+    		display: block;
+    		width: 100%;
+    		height: auto;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+
+#owl-products {
+
+	position: relative;
+	height: 100% !important;
+
+	.owl-stage-outer, .owl-stage {
+
+		position: relative;
+		height: 100% !important;
+
+	}		
+
+	.item {
+
+		position: relative;
+		height: 100% !important;
+
+		img{
+    		display: block;
+    		width: 100%;
+    		height: auto;
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

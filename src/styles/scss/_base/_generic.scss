@@ -1,0 +1,139 @@
+/* text */
+
+.text-break {
+ 	white-space: pre-line 
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+/* positions */
+.fixed{
+	position: fixed !important;
+	width: 100%;
+	top: 0;	
+	left: 0;
+	z-index: 2;	
+}
+
+.fa-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.center{
+	
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	
+	&.d_block{
+		display: block !important;
+	}
+
+	&.d_table{
+		display: table !important;
+	}
+}
+
+.middle {
+    position: relative;
+    top: calc(50% - 30%);
+}
+
+
+/* paddings */
+.no-padd-sides {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.no-padd-all {
+	padding: 0 !important;	
+}
+
+
+/* transitions */
+.tween__in-out {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+
+/* visibility */
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+/* hidden and show to mobile/desktop */
+.desk {
+	display: none;
+}
+
+.mob {
+	display: none;
+}
+
+.devFront {
+  position: absolute;
+  display: table;  
+  width: 100%;
+  top: 0;
+  left: 0; 
+  margin-bottom: -134px; /* <== ajuste */   
+  z-index: 0;  
+}
+
+.devFront img {
+  position: relative;
+  display: block;
+  /* top: -134px; <== ajuste */ 
+  margin: 0 auto; 
+  width: 76rem; 
+}
+
+
+.overflow {
+	overflow: hidden;
+}
+
+
+@media screen and (min-width: 50.1em) {	
+
+	.desk {
+		display: block !important;
+	}
+
+	.mob {
+		display: none !important;
+	}	
+	
+}
+
+/* mobile < 768 px */
+@media screen and (max-width: 50em) {	
+
+	.desk {
+		display: none !important;
+	}
+
+	.mob {
+		display: block !important;
+	}	
+	
+}
+
+
+

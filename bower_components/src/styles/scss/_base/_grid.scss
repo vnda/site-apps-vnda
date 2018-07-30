@@ -1,0 +1,331 @@
+/* container */
+.container {
+  /* padding: 0 40px 1em 100px; default */
+  /* from .browser (not used) */  
+  position: relative;
+  /*max-width: 76rem;*/
+  min-height: 100%; /* moved from .container */
+  margin: 0 auto;
+  padding: 0; 
+
+  &.full {
+    width: 100% !important;
+    max-width: inherit !important;
+    min-width: 100% !important;
+  }
+}
+
+.grid {
+
+  display: flex; /* or inline-flex */
+
+  /* nowrap = todos os itens flexíveis estarão em uma linha. <= default*/
+  /* wrap = os itens flexíveis serão agrupados em várias linhas, de cima para baixo. */ 
+  /* wrap-reverse = os itens flexíveis serão agrupados em várias linhas de baixo para cima.*/
+  flex-wrap: wrap;
+
+  /* dir : direction of elements into container flex */
+
+  &.dir-row {
+    flex-direction: row;
+  }
+
+  &.dir-row--reverse {
+    flex-direction: row-reverse;
+  } 
+
+  &.dir-col {
+    flex-direction: column;
+  }
+
+  &.dir-col--reverse {
+    flex-direction: column-reverse;
+  }
+
+  /* align : alinhamento ao longo do eixo principal */
+
+  /* distribuídos uniformemente */
+  &.justify-between {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  /*embalados em direção à linha de partida*/
+  &.justify-start {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  /*embalados em direção à linha final*/
+  &.justify-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+  
+  /*centralizados ao longo da linha*/
+  &.justify-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  /* distribuídos uniformemente na linha com espaço igual ao redor deles*/
+  &.justify-around {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+
+  /*distribuídos para que o espaçamento entre dois itens (e o espaço para as bordas) seja igual.*/
+  &.justify-evenly {
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+  }
+
+  /*margem de margem de início cruzado dos itens é colocada na linha de cross-start*/
+  &.align-items--start {
+     align-items: flex-start;
+  }
+
+  /*borda de margem de fim cruzado dos itens é colocada na linha de fim-de-linha*/
+  &.align-items--end {
+     align-items: flex-end;
+  }
+
+  /*os itens estão centrados no eixo cruzado*/
+  &.align-items--center {
+     align-items: center;
+  }   
+
+  /*os itens são alinhados, como suas linhas de base alinham*/
+  &.align-items--baseline {
+     align-items: baseline;
+  }
+
+  /* esticar para preencher o container (ainda respeitar min-width / max-width)*/
+  &.align-items--stretch {
+     align-items: stretch;
+  } 
+}
+
+.grid__item {
+
+  position: relative;
+  float: left;
+  width: 100%;
+
+  /*substitui linhamento padrão do container por itens flexíveis individuais*/
+  &.self {
+
+    &-auto {
+      align-self: auto;
+    }
+
+    &-start {
+      align-self: flex-start;
+    }
+
+    &-end {
+      align-self: flex-end;
+    }
+
+    &-center {
+      align-self: center;
+    }
+
+    &-baseline {
+      align-self: baseline;
+    }
+
+    &-stretch {
+      align-self: stretch;
+    }     
+  } 
+
+  /* basic width's */ 
+
+  &.half {
+    width: 50%;
+  }
+
+  &.third {
+    width: 33.3%;
+  } 
+
+  &.double-third{
+    width: 66.6%;
+  }
+
+  &.forth {
+    width: 25%;
+  } 
+
+  &.full {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }   
+}
+
+.grid__sub-item {
+  
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+
+    &.half {
+      width: 50%;
+    }
+
+    &.third {
+      width: 33.3%;
+    } 
+
+    &.double-third{
+      width: 66.6%;
+    }
+
+    &.forth {
+      width: 25%;
+    } 
+
+    &.full {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }   
+}
+
+.width {
+
+  &.half {
+    width: 50%;
+  }
+
+  &.third {
+    width: 33.3%;
+  } 
+
+  &.double-third{
+    width: 66.6%;
+  }
+
+  &.forth {
+    width: 25%;
+  } 
+
+  &.full {
+    width: 100%;
+  }
+
+}
+
+/*substitui linhamento padrão do container por itens flexíveis individuais*/
+.self {
+
+  &__auto {
+    align-self: auto;
+  }
+
+  &__start {
+    align-self: flex-start;
+  }
+
+  &__end {
+    align-self: flex-end;
+  }
+
+  &__center {
+    align-self: center;
+  }
+
+  &__baseline {
+    align-self: baseline;
+  }
+
+  &__stretch {
+    align-self: stretch;
+  }     
+}
+
+
+/* generics */
+
+.auto-left {
+  margin-left: auto;
+}
+
+
+/* media */
+@media screen and (min-width: 70.1em) {
+
+  .container {    
+    max-width: 76rem; 
+  }
+
+}
+
+@media screen and (max-width: 70em) {
+
+  /*.container {
+    width: 100%;
+  }*/
+
+  .grid {
+    width: 100% !important;
+  }
+
+  .grid__item {
+
+    /*img {
+      width: 100% !important;
+    }*/
+
+    &.forth {
+      width: 50%;
+    }
+
+    &.third {
+      img {
+        width: 75% !important;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 60em) {
+
+  .grid__item {
+
+    &.third {
+      width: 100%;
+    } 
+  }
+}
+
+/* mobile < 768 px */
+@media screen and (max-width: 50em) { 
+  
+  .grid{
+    padding: 0 10px;
+  }
+
+  .grid__item{
+
+    &.forth{
+      width: 100%;
+    }
+
+    &.half {
+      width: 100%;
+    }     
+  } 
+}
+
+
+

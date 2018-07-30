@@ -1,0 +1,67 @@
+
+// MIXINS
+
+@mixin flexbox () {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex ( $values ) {
+  	-webkit-box-flex: $values;
+  	-moz-box-flex:  $values;
+  	-webkit-flex:  $values;
+  	-ms-flex:  $values;
+  	flex:  $values;
+}
+
+@mixin order ( $val ) {
+  	-webkit-box-ordinal-group: $val;  
+  	-moz-box-ordinal-group: $val;     
+  	-ms-flex-order: $val;     
+  	-webkit-order: $val;  
+  	order: $val;
+}
+
+@mixin flexwrap ( $val ) {
+	-webkit-flex-wrap: $val;
+	-moz-flex-wrap: $val;
+	-webkit-wrap: $val;
+	-ms-flex-wrap: $val;
+	flex-wrap: $val;
+}
+
+
+// COLORS
+
+$clr-grafiti-char:#010000;
+
+$clr-teal:#b5b7bc;
+$clr-teal-light:#ebebeb;
+$clr-white:#ffffff;
+$clr-header-teal:#aaaaaa;
+$clr-dark-alpha:rgba(0,0,0,0.5);
+$clr-dark:#000000;
+$clr-pricing:#DBDBDB;
+$clr-button:#A8A8A9;
+$clr-caption:rgba(181, 183, 188, 0.5);
+$clr-pink:#fb377f;
+$clr-light-gray: rgba(68,68,68,0.05);
+
+
+
+// COLOR THEME
+
+$clr-light-gray: #efefef;
+$clr-normal-gray: #b7b7b7;
+$clr-light-orange: #f88d5b;
+$clr-dark-orange: #b24c19;
+$clr-normal-blue: #2686e9;
+$clr-dark-gray: #666666;
+
+
+
+
+
