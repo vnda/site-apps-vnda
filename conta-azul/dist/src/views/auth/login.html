@@ -1,0 +1,46 @@
+
+<template>
+
+	<section class="section">
+
+		<div class="grid">			
+
+			<form id="formContact" class="form-rows" enctype='application/json' novalidate>
+
+				<div class="grid__item width--third block"></div>
+
+				<div class="grid__item width--third">
+
+					<div class="card card__height--auto">
+						<div class = "loading-bar bar1"></div>
+						<div class = "loading-bar bar2"></div>
+						<div class = "loading-bar bar3"></div>
+						<div class = "loading-bar bar4"></div>
+
+						<h1> Login </h1>
+						<span class="error" id="response" aria-live="polite"></span>
+
+						<label for="email">Email</label>
+						<input type="email" name="email">
+						<span class="error" id="email" aria-live="polite">Declare um email válido</span>
+
+						<label for="password">Senha</label>
+						<input type="password" class="input-pass" name="password">
+						<span id="eye" class="eye"><i class="fa fa-eye"></i></span>						
+						<span class="error" id="password" aria-live="polite">A senha possui no mínimo 6 carateres</span>
+						
+						<button type="submit" class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s"><span>Login</span></button>
+
+					</div>					
+
+				</div>
+
+				<div class="grid__item width--third block"></div>	
+
+			</form>	
+
+		</div>
+
+	</section>
+
+</template>

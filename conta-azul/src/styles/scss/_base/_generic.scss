@@ -62,7 +62,7 @@
 
 
 /* transitions */
-.tween--ease-in-out {
+.tween__in-out {
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 }
@@ -105,7 +105,9 @@
 }
 
 
-
+.overflow {
+	overflow: hidden;
+}
 
 
 @media screen and (min-width: 50.1em) {	

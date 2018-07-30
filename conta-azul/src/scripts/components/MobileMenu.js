@@ -1,45 +1,88 @@
 
 export const MobileMenu = function( routes ){	
 
-	jQuery(document).ready(function( $ ) {		
+	$(document).ready(function() {		
 
-        $("#menu").mmenu({
+    $("#menu").mmenu({
 
-           	"slidingSubmenus": false,
+       	"slidingSubmenus": false,
 
-           	"extensions": [
-              	"fx-panels-zoom",
-              	"pagedim-black"
-           	],
+       	"extensions": [
+          	"fx-panels-zoom",
+          	"pagedim-black"
+       	],
 
-           	"iconPanels": true,
+       	"iconPanels": true,
 
-           	"navbars": [
+       	"navbars": [
 
-              	{
-              	   "position": "top",
+          	{
+          	   "position": "top",
 
-              	   "content": [
-              	      	"searchfield"
-              	   ]
+          	   "content": [
+          	      	"searchfield"
+          	   ]
 
-              	},
+          	},
 
-              	{
-              	   "position": "top"
-              	}
-            ]
+          	{
+          	   "position": "top"
+          	}
+        ]
 
-        });
-				
-		let links = document.links;								
-		
-		Array.from(links).forEach(function(link){
-			link.addEventListener('click', function( ev ) {
-				ev.preventDefault();
-				routes.navigate(this.href);						
-			});
-		});	
+    });
 
 	});
+
+  let links = document.links; 
+  window.onscroll = scroll;           
+    
+  Array.from(links).forEach(function(link){
+    link.addEventListener('click', function( ev ) {
+
+      ev.preventDefault();
+      //routes.navigate(this.href);       
+
+      let anchor = this.hash.replace("#", "");        
+
+      if(anchor == "recursos"){
+        window.scrollTo({
+            top: 1029,
+            behavior: "smooth"
+        });
+      }
+
+      if(anchor == "artigos"){
+        window.scrollTo({
+            top: 1957,
+            behavior: "smooth"
+        });
+      }
+
+      if(anchor == "faq"){
+        window.scrollTo({
+            top: 2350,
+            behavior: "smooth"
+        });          
+      }
+
+      if(anchor == "info"){
+        window.scrollTo({
+            top: 2441,
+            behavior: "smooth"
+        });          
+      }
+
+    });
+
+  }); 
+
+  document.querySelector(".logo").addEventListener('click', function( ev ) {   
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+     
+  }); 
 }

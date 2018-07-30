@@ -1,11 +1,5 @@
-main{
-	position: relative;
-	z-index: 1;
-}
-
-main, .content {
-	height: 100%;	
-
+.content {
+	height: 100%;
 }
 
 .section {
@@ -409,20 +403,26 @@ main, .content {
 	white-space: nowrap;
 	background: $clr-button;
 	color: $clr-white;
+	
+	&.__mdl {
+		padding: inherit;
+		line-height: 0.3;
+	}
 
 	&.__header {
+
 		background: #f88d5b;
-    border: 0;
-    font-weight: 700;
-    padding: 15px 13px;
-    font-size: 18px;
-    color: #efefef;
-    text-transform: none;
-    letter-spacing: inherit;
-    margin: 0;
-    margin-right: 42px;
-    margin-left: 27px;
-    /*margin-top: 5px;*/
+    	border: 0;
+    	font-weight: 700;
+    	/*padding: 15px 13px;*/
+    	font-size: 18px;
+    	color: #efefef;
+    	text-transform: none;
+    	letter-spacing: inherit;
+    	margin: 0;
+    	margin-right: 42px;
+    	margin-left: 27px;
+   		line-height: 0.3;
 	}
 
 	.fa {
@@ -493,9 +493,17 @@ main, .content {
     small{
     	color: $clr-grafiti-char !important;
     	line-height: 1;
-    }
+    }   
 
 	}
+
+	&.faq {
+    	font-size: 18px;
+    	line-height: 18px;    	
+    	color: #010000;
+    	font-weight: 700;
+    	padding: 0 50px;	
+    }
 }
 
 /* blockquote */
@@ -799,5 +807,3 @@ main, .content {
 	}	
 
 }
-
-

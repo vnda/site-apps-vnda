@@ -44,7 +44,6 @@
 		url('../fonts/stroke7pixeden/stroke7pixeden.svg?u58ytb#stroke7pixeden') format('svg');
 }
 
-
 @font-face {
 	font-weight: normal;
 	font-style: normal;
@@ -81,6 +80,35 @@
 	src:url('../fonts/opensans/OpenSans-Light.ttf') format('truetype')
 }
 
+/*@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../vendor/mdl-icons/iconfont/MaterialIcons-Regular.eot); 
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../vendor/mdl-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../vendor/mdl-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+    url(../vendor/mdl-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}*/
+
+/*.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;  
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; 
+  -moz-osx-font-smoothing: grayscale;  
+  font-feature-settings: 'liga';
+}*/
 
 
 /* Windows Chrome ugly fix http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363 */
@@ -90,7 +118,3 @@
 		src: url('../fonts/icomoon.svg#icomoon') format('svg');
 	};
 }
-
-
-
-

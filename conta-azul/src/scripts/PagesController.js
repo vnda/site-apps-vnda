@@ -24,7 +24,63 @@ export const PagesController = {
 
 	home () {
 		
-		this.viewModel.page("home");		
+		this.viewModel.page("home");
+
+		let me = Promise.resolve( this.viewModel.currentView() ); 		
+		me.then((res) => {			
+
+			setTimeout(() => {						
+										
+				let submitNews = res.querySelector(".send-news");				
+
+				submitNews.addEventListener("click", (ev) => {			
+					ev.preventDefault();							
+				});
+
+				window.onscroll = scroll;
+
+				let _res = res;	
+
+				// res.querySelector("#notebook").classList.add("hidden");
+
+				function scroll () {
+					//console.log("scroll X:" + window.pageXOffset + " scroll Y:" + window.pageYOffset);
+					//console.log("largura: " + window.innerWidth + " altura: " + window.innerHeight);	
+
+					// if( window.pageYOffset > 600 ){
+					// 	_res.querySelector("#notebook").classList.add("fadeInRight", "animated");					
+					// }	
+				}
+
+				componentHandler.upgradeDom();
+
+				jQuery(document).ready(function( $ ) {
+
+	    console.log("owlcarousel ok");
+
+			/* CREATE */		
+		 
+			$("#owl-panels").owlCarousel({
+			 		autoplay:true;
+			    nav:false, 
+			    slideSpeed : 300,
+			    paginationSpeed : 400,
+			    singleItem:true,
+				  items: 1,
+				  loop: true,
+				  navClass: ['owl-prev', 'owl-next'],
+				  navText: ["<img src='' class='prev banner' />", "<img src='' class='next banner' />"]		 
+			 
+			});				
+		 
+		});		
+
+			}, 200);				
+
+		});	
+
+			
+	
 	},
 
 	about () {
