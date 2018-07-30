@@ -123,7 +123,7 @@ footer {
 
 	span {
 		color: #fff;
-    	font-size: 25px;
+    	font-size: 18px;
 	}
 
 }
@@ -328,7 +328,7 @@ section {
 	&.section-top {	
 			
 		background-image: linear-gradient( 0deg, #FFFFFF 0%, #f2f9fe 100% );
-		padding: 400px 0 0 0;	
+		padding: 260px 0 0 0;	
 
 		.grid__item:nth-child(1){
 			top: -80px;
@@ -593,6 +593,22 @@ figure {
     padding: 0;
     display: inline;
   }
+
+  &.prev {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+    
+  }
+
+  &.next {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 50%;
+   
+  }
 }
 
 
@@ -691,6 +707,70 @@ i.icon-user:before{
     width: 100%;
     font-style: initial;
 } 
+
+i.icon-next:before{
+    content: "keyborad_arrow_left";
+    font-family: 'Material Icons';
+    color: $clr-light-orange;
+    font-size: 7em;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    bottom: 0;
+    /*right: 0;*/
+    /*width: 100%;*/
+    font-style: initial;
+} 
+
+i.icon-prev:before{
+    content: "keyborad_arrow_right";
+    font-family: 'Material Icons';
+    color: $clr-light-orange;
+    font-size: 7em;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    bottom: 0;
+    /*right: 0;*/
+    /*width: 100%;*/
+    font-style: initial;
+} 
+
+.owl-nav { 
+  position: absolute;  
+  width: 100%;
+  top: 40%;
+}
+
+/*.owl-prev, .owl-next {
+    position: absolute;   
+}*/
+
+.owl-prev {
+  
+   float: left;
+   img{  
+    position: absolute;    
+      width: 100px;
+      float: left;
+      left: -100px;        
+  }
+}
+
+.owl-next {
+
+  float: right;
+  img{   
+  position: absolute;   
+      width: 100px;
+      float: right;
+      right: -100px;        
+  }
+}
 
 
 .titleValue{ color: #757575; }  
