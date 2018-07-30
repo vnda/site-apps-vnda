@@ -118,3 +118,25 @@
 		src: url('../fonts/icomoon.svg#icomoon') format('svg');
 	};
 }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Roboto Regular';  
+  src:url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Roboto Bold'; 
+  src:url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Roboto Light';  
+  src:url('../fonts/Roboto/Roboto-Light.ttf') format('truetype')
+}
+
