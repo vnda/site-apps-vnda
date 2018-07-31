@@ -759,7 +759,7 @@ i.icon-prev:before{
 .owl-prev {
   
    float: left;
-   
+
    img{  
       position: absolute;    
       width: 50px;
@@ -810,6 +810,9 @@ i.icon-prev:before{
 
 }
 
+summary:hover {
+    background: #fff !important;
+}
 
 @media screen and (max-width: 70em) {
 

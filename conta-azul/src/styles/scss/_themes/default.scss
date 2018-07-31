@@ -499,11 +499,19 @@
 	}
 
 	&.faq {
-    	font-size: 18px;
+    	/*font-size: 18px;
     	line-height: 18px;    	
     	color: $clr-grafiti-char;
     	font-weight: 700;
-    	padding: 0 50px;	
+    	padding: 0 50px;*/
+
+
+			font-size: 1.1rem;
+      font-weight: 500;
+      font-family: "Roboto Regular";
+      line-height: 1.46429em;
+       margin: 0 !important;
+
   }
 
   &.small{
@@ -515,6 +523,24 @@
     	opacity: .8;    	
   }   
 }
+
+details {
+
+	.content {
+
+		  p {
+
+			  font-size: 1rem;
+	      font-weight: 300;
+	      font-family: "Roboto Regular";
+	      line-height: 1.46429em;
+	      margin-top: 20px;
+
+      }      
+	}
+}
+
+
 
 /* blockquote */
 .blockquote {
@@ -776,6 +802,9 @@
 		box-shadow: 20px 0 0 $clr-caption, 40px 0 0 $clr-white;
 	}	
 }
+
+
+
 
 
 @media screen and (max-width: 50em) {	
