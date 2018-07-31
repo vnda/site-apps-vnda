@@ -48,8 +48,8 @@ export const PagesController = {
 						  items: 1,
 						  loop: true,
 						  navClass: ['owl-prev', 'owl-next'],
-						  // navText: ["<i class='icon-prev'></i>", "<i class='icon-next'></i>"],
-						  navText: ["<img src='static/images/left.png' class='prev banner' />", "<img src='static/images/right.png' class='next banner' />"]		 		 
+						  navText: ["<i class='icon-prev'></i>", "<i class='icon-next'></i>"]
+						  // navText: ["<img src='static/images/left.png' class='prev banner' />", "<img src='static/images/right.png' class='next banner' />"]		 		 
 					 
 					});				
 		 

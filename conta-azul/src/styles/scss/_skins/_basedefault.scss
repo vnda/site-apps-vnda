@@ -732,37 +732,53 @@ i.icon-user:before{
     font-style: initial;
 } 
 
-i.icon-next:before{
-    content: "keyborad_arrow_left";
-    font-family: 'Material Icons';
-    color: $clr-light-orange;
-    font-size: 7em;
+i.icon-next {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0;
     padding: 0;
+    left: 0;
+    float: left;    
+    color: #333;
+    font-size: 5em;    
     text-align: center;
-    margin-top: 0;
-    position: absolute;
-    top: calc(50% - 12px);
-    bottom: 0;
-    /*right: 0;*/
-    /*width: 100%;*/
-    font-style: initial;
-} 
+    font-style: initial   
+}
 
-i.icon-prev:before{
+i.icon-next:before{
     content: "keyborad_arrow_right";
     font-family: 'Material Icons';
-    color: $clr-light-orange;
-    font-size: 7em;
-    padding: 0;
-    text-align: center;
-    margin-top: 0;
-    position: absolute;
-    top: calc(50% - 12px);
-    bottom: 0;
-    /*right: 0;*/
-    /*width: 100%;*/
-    font-style: initial;
+    width: 40px;
+    display: block;
+    left: -630px;
+    position: relative;    
 } 
+
+
+i.icon-prev {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    float: left;    
+    color: #333;
+    font-size: 5em;    
+    text-align: center; 
+    font-style: initial  
+}
+
+i.icon-prev:before{
+    content: "keyborad_arrow_left";
+    font-family: 'Material Icons';
+    width: 40px;
+    display: block;
+    left: -650px;
+    position: relative;   
+}  
+
 
 .owl-nav { 
   position: absolute;  
@@ -778,6 +794,13 @@ i.icon-prev:before{
   
    float: left;
 
+    padding: 0!important;
+    font: inherit;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -60px;
+
    img{  
       position: absolute;    
       width: 50px;
@@ -787,9 +810,17 @@ i.icon-prev:before{
   }
 }
 
+
 .owl-next {
 
   float: right;
+
+  padding: 0!important;
+  font: inherit;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -60px;
 
   img{   
       position: absolute;   
@@ -1028,6 +1059,16 @@ summary:hover {
 
 
 @media screen and (max-width: 70em) {
+
+    .owl-prev {
+  
+        left: 0;
+    }
+
+    .owl-next {
+      
+      right: 0;      
+    }
 
     section{
       padding: 30px 0;
