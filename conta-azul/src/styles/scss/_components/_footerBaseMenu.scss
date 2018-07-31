@@ -106,7 +106,13 @@ footer {
 	    padding: 50px;
 
 	    .grid__item.third:nth-child(1){
-        margin-bottom: 30px;
+        margin-bottom: 0;
+      }
+
+      .send-news-footer {
+
+      	margin: 40px 0 0 0 !important;
+
       }
 	}
 

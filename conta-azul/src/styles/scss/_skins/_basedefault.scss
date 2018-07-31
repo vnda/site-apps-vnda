@@ -1163,7 +1163,7 @@ summary:hover {
     }     
 
     section.section-optimize .grid__item:nth-child(2) {  
-        height: 276px;
+        height: 300px;
         width: 100%;     
         background-size: cover;
         background-position: center center;
@@ -1222,8 +1222,43 @@ summary:hover {
     input.send-news {
       width: auto; 
       top: 0;     
-    }    
+    } 
+
+    h2.heading {      
+        margin-bottom: 50px;
+    } 
+
+    h3.heading {
     
+      margin-bottom: 20px !important;
+      margin-top: 20px !important;     
+    } 
+
+    img[alt="Conta Azul"] {
+          width: 60% !important;
+    } 
+
+    .grid__item.thumbs p {
+        text-align: center;
+        width: 50%;
+        font-size: 1.1em;
+        color: #333;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    h2.heading {
+      text-align: center;
+    }
+
+    .span-width {
+        width: 100% !important;
+    }
+
+    .input-width {
+        width: 100% !important;
+    }
+      
 }
 
 
