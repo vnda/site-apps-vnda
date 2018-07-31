@@ -25,6 +25,7 @@ export const PagesController = {
 	home () {
 		
 		this.viewModel.page("home");
+		componentHandler.upgradeDom();
 
 		let me = Promise.resolve( this.viewModel.currentView() ); 		
 		me.then((res) => {			
@@ -37,50 +38,27 @@ export const PagesController = {
 					ev.preventDefault();							
 				});
 
-				window.onscroll = scroll;
-
-				let _res = res;	
-
-				// res.querySelector("#notebook").classList.add("hidden");
-
-				function scroll () {
-					//console.log("scroll X:" + window.pageXOffset + " scroll Y:" + window.pageYOffset);
-					//console.log("largura: " + window.innerWidth + " altura: " + window.innerHeight);	
-
-					// if( window.pageYOffset > 600 ){
-					// 	_res.querySelector("#notebook").classList.add("fadeInRight", "animated");					
-					// }	
-				}
-
-				componentHandler.upgradeDom();
-
-				jQuery(document).ready(function( $ ) {
-
-	    console.log("owlcarousel ok");
-
-			/* CREATE */		
+				jQuery(document).ready(function( $ ) {				
 		 
-			$("#owl-panels").owlCarousel({
-			 		
-			    nav:true, 
-			    slideSpeed : 300,
-			    paginationSpeed : 400,
-			    singleItem:true,
-				  items: 1,
-				  loop: true,
-				  navClass: ['owl-prev', 'owl-next'],
-				  // navText: ["<i class='icon-prev'></i>", "<i class='icon-next'></i>"],
-				  navText: ["<img src='static/images/left.png' class='prev banner' />", "<img src='static/images/right.png' class='next banner' />"]		 		 
-			 
-			});				
+					$("#owl-panels").owlCarousel({
+					 		
+					    nav:true, 
+					    slideSpeed : 300,
+					    paginationSpeed : 400,
+					    singleItem:true,
+						  items: 1,
+						  loop: true,
+						  navClass: ['owl-prev', 'owl-next'],
+						  // navText: ["<i class='icon-prev'></i>", "<i class='icon-next'></i>"],
+						  navText: ["<img src='static/images/left.png' class='prev banner' />", "<img src='static/images/right.png' class='next banner' />"]		 		 
+					 
+					});				
 		 
-		});		
+				});		
 
 			}, 200);				
 
-		});	
-
-			
+		});				
 	
 	},
 

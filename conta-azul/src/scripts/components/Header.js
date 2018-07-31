@@ -9,23 +9,22 @@
 
 export const Header = function( ) {  
 
-    // document.querySelector(".button-menu").addEventListener('click', function( ev ) {       
-    //    console.log("menu mobile");         
-    // });    
-
-    window.onscroll = scroll;
+    let header = document.querySelector(".header"); 
 
     function scroll () {       
 
-      if( window.pageYOffset > 200 ){
+      if( window.pageYOffset > 100 ){
         
-        console.log( window.pageYOffset );
-      } 
+          header.classList.add("collapse");     
 
-      if( window.pageYOffset < 200 ){
-        // document.querySelector(".header").classList.remove("collapse");
+      }else {
+
+          header.classList.remove("collapse");  
+          
       } 
 
     }
+
+    window.onscroll = scroll;
 
 }

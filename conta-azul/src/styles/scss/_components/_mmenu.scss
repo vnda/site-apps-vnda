@@ -54,7 +54,7 @@
 	ul{	
 		display: block;
 		list-style: none;
-		margin: 10px 10px;
+		margin: 0 10px;
 		padding: 0;
 	}
 
@@ -68,23 +68,23 @@
 		display: inline-block;	
 		margin: 0 ;
     margin-left: 40px;
-		font-family: "Oswald Light", sans-serif;	
-    font-size: 1em;
+		font-family: Roboto Regular;	
+    font-size: 1.2em;
     font-weight: 400;
 		color: $clr-grafiti-char;			
 
 		&:hover {
-			color: $clr-grafiti-char;
+			color: $clr-dark-orange;
 			cursor: pointer;				
 		}
 
 		&:focus {
-			color: $clr-grafiti-char;
+			color: $clr-dark-orange;
 			
 		}
 
 		&:active {
-			color: $clr-grafiti-char;
+			color: $clr-dark-orange;
 		}	
 
 	}

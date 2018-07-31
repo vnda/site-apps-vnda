@@ -5,7 +5,7 @@ body {
 	font-weight: 500;
 	font-size: 1em;
 	/*font-family: 'Raleway', Arial, sans-serif;*/
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Regular';
 	/* needed when used fixed header
 	or menu, remove this if not use fixed class*/
 	padding-top: 0; 
@@ -25,6 +25,7 @@ a {
 
 p {
 	font-size: 16px;
+  color: $clr-grafiti-char;
 
 	span {
 		color: $clr-light-orange;
@@ -49,18 +50,35 @@ header {
 	}
 
 	&.header{
-		position: fixed;
-    width: 100%;
-    z-index: 3;
-    background: transparent;
-		color: $clr-grafiti-char;
-		/*padding: 1.1em 0 .4em 0;*/
-		padding: 0;
-		/*height: 68px;*/
 
-    &.collapse {
-       background: #f5fafe !important;
-    }
+    width: 100%;    
+		color: $clr-grafiti-char;		
+    z-index: 9999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 0px 20px transparent;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease; 
+
+    &.collapse {      
+      background-color: white;
+      box-shadow: 0 0px 20px rgba(0,0,0,0.08);
+      -webkit-transition: all 250ms ease;
+      -moz-transition: all 250ms ease;
+      -ms-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+    }  
+
 	}
 
 }
@@ -114,11 +132,11 @@ footer {
 	}
 
 	input.newsletter {
-		width: 69%;
+		/*width: 69%;*/
 	}
 
 	input.send-news {
-		width: 30%;
+		/*width: 30%;*/
 	}
 
 	span {
@@ -142,7 +160,7 @@ input, textarea, select {
 }
 
 input.newsletter {
-	width: 69%;
+	/*width: 69%;*/
 	border: 1px solid $clr-normal-blue;
 }
 
@@ -795,6 +813,12 @@ i.icon-prev:before{
   cursor: pointer;
 }
 
+.news {
+
+  max-width: 70%;
+
+}
+
 
 @media screen and (max-width: 70em) {
 
@@ -838,7 +862,7 @@ i.icon-prev:before{
     }
 
     input.newsletter {
-        width: 65%;
+       /* width: 65%;*/
     }
 
     .logo img {
@@ -849,6 +873,12 @@ i.icon-prev:before{
 
     section.section-thumbs {
       padding-bottom: 40px;
+    }
+
+    .news {
+
+      max-width: 100%;
+
     }
 }
 
