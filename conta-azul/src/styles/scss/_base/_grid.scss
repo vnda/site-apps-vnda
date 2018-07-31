@@ -4,15 +4,10 @@
   /* from .browser (not used) */  
   position: relative;
   /*max-width: 76rem;*/
-  min-height: 100%; /* moved from .container */
+  /*min-height: 100%;  moved from .container */
   margin: 0 auto;
   padding: 0; 
 
-  &.full {
-   
-    max-width: 84rem !important;
-    
-  }
 }
 
 .grid {

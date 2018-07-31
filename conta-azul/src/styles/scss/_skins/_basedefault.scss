@@ -85,7 +85,7 @@ header {
 
 }
 
-footer {
+footer { 
 
 	.heading {
 
@@ -187,6 +187,17 @@ hr {
     border-left: 0;    
     margin: 2em 0;
     padding: 0;
+}
+
+.container {   
+
+    &._header {     
+      max-width: 84rem !important;      
+    }
+
+    &._footer {
+      max-width: 100%;
+    }
 }
 
 .grid {
@@ -822,6 +833,190 @@ i.icon-prev:before{
 summary:hover {
     background: #fff !important;
 }
+
+
+#sf-newsletter-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1001;
+    background: #222;
+    display: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#sf-newsletter-bar .sub-code {
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+}
+
+#sf-newsletter-bar .sub-code>form {
+    line-height: 80px;
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+#sf-newsletter-bar .sub-code>form input[type="tel"], #sf-newsletter-bar .sub-code>form input[type="email"] {
+    width: auto;
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    margin: 17px 0;
+    vertical-align: top;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #ccc;
+    margin-left: 10px;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+#sf-newsletter-bar .sub-code>form input[type="submit"] {
+    transition: all 0.5s ease;
+    margin: 17px 0 17px 10px;
+    height: 44px;
+    vertical-align: top;
+    padding: 10px 24px;
+    background: transparent;
+    text-shadow: none;
+    border-width: 2px;
+    border-style: solid;
+    color: #ccc;
+    border-color: #ccc;
+}
+
+#sf-newsletter-bar .sub-text {
+    width: 30%;
+    font-size: 100%;
+    line-height: 80px;
+    margin: 0;
+    padding: 0 0 0 25px;
+    float: left;
+    text-align: left;
+    color: #ccc;
+}
+
+
+.sub-code {
+    
+    display: inline-block;
+    text-align: center;
+}
+
+.sub-text {
+    
+    font-size: 110%;
+    line-height: 80px;
+    margin: 0;    
+    float: left;
+    text-align: left;
+    color: #ccc;
+}
+
+.send-news-footer {
+
+    position: relative;
+    height: 50px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    /*font-size: 16px;*/
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    /*line-height: 36px;*/
+    vertical-align: middle;
+    transition: all 0.5s ease;
+    margin: 17px 0 17px 10px;
+    height: 50px !important;
+    vertical-align: top;
+    padding: 0 30px;
+    background: transparent;
+    text-shadow: none;
+    border-width: 2px !important;
+    border-style: solid !important;
+    color: #ccc !important;
+    border-color: #ccc !important;
+
+
+    &:hover {
+      border-color: #ff9800 !important;
+      color: #ff9800 !important;
+    }
+
+}
+
+.span-width {
+  width: 20% !important;
+}
+
+.input-width {
+  width: 40% !important;
+
+  input {
+    /*height: 65px;*/
+  }
+}
+
+.mdl-textfield__label {
+    padding: 0 !important;
+    top: 40px !important;
+    font-size: 13px;
+    color: #ccc !important;
+}
+
+
+.mdl-textfield__label:after {
+    background-color: #ff9800 !important;
+    bottom: 24px !important;
+    content: '';
+    height: 2px;
+    left: 45%;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    width: 10px;
+    box-shadow: none;
+}
+
+.mdl-textfield {
+    /*padding: 38px 0 !important;*/
+    padding: 38px 0 24px 0 !important;
+    
+}
+
+@media screen and (min-width: 800px) {
+  #sf-newsletter-bar .sub-code>form {
+      flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+  }
+}
+
 
 @media screen and (max-width: 95em) {
 

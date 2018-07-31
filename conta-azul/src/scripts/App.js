@@ -8,6 +8,7 @@
 
 import { Bootstrap } from "./../../app/Bootstrap.js";
 import { Header } from "./components/Header.js";
+import { Footer } from "./components/Footer.js";
 import { MobileMenu } from "./components/MobileMenu.js";
 import { FXWow } from "./components/FXWow.js";
 
@@ -18,7 +19,7 @@ class App extends Bootstrap {
 		super();
 	
 		this.layout.include('mobile-menu', MobileMenu, [this.routes]);
-		this.layout.include('footer-base-menu');			
+		this.layout.include('footer-base-menu', Footer);			
 		this.layout.yeld('view-router');								
 	}
 
@@ -40,28 +41,6 @@ class App extends Bootstrap {
 
 /* App */
 const app = new App();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

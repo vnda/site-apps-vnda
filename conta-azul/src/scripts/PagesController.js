@@ -24,19 +24,18 @@ export const PagesController = {
 
 	home () {
 		
-		this.viewModel.page("home");
-		componentHandler.upgradeDom();
+		this.viewModel.page("home");		
 
 		let me = Promise.resolve( this.viewModel.currentView() ); 		
 		me.then((res) => {			
 
 			setTimeout(() => {						
 										
-				let submitNews = res.querySelector(".send-news");				
+				let submitNews = res.querySelector(".send-news");	
 
 				submitNews.addEventListener("click", (ev) => {			
 					ev.preventDefault();							
-				});
+				});			
 
 				jQuery(document).ready(function( $ ) {				
 		 
@@ -54,11 +53,13 @@ export const PagesController = {
 					 
 					});				
 		 
-				});		
+				});	
+
+				componentHandler.upgradeDom();		
 
 			}, 200);				
 
-		});				
+		});
 	
 	},
 
