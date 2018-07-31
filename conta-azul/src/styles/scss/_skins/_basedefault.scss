@@ -453,26 +453,74 @@ h3.heading {
 
   position: relative;
   background: #fff;  
-  border-radius: 20px;
+  border-radius: 0;
   width: 100%;
   padding: 20px;
-  height: 240px;
+  height: 300px;
+
+
+  .thumb-circle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 1px solid $clr-light-orange;
+    border-radius: 50%;
+    display: block;
+
+    .icon {        
+        background: url(../images/setup_outline.svg);
+        width: 90px;
+        height: 90px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        top: -27%;
+        position: relative;
+        left: -29%;
+        transform: translate(50%, 50%);
+    }
+  }
+
+  &:hover {
+
+    .thumb-circle {
+
+      .icon {
+          background: url( ../images/setup_colored.svg );
+          width: 90px;
+          height: 90px;
+          background-repeat: no-repeat;
+          margin: 0 auto;
+          top: -27%;
+          position: relative;
+          left: -29%;
+          transform: translate(50%, 50%);
+      }
+    } 
+  }
 
   h3.article-card--header {
-    font-size: 30px !important;
-    line-height: 30px !important;
+    font-family: "Roboto Light";
+    font-size: 20px !important;
+    line-height: 20px !important;
+    text-align: center;
+    text-transform: uppercase; 
     color: $clr-grafiti-char;
   }
 
-  h5.article-card--body {
-    font-size: 14px !important;
-    opacity: 0.5 !important; 
+  h5.article-card--body {    
+    font-family: "Roboto Light";
+    font-size: 14px !important;    
+    text-align: center;
+    line-height: 1.4;
   }
 
   span.article-card--footer {
-    font-size: 12px !important;   
+    font-family: "Roboto Light";
+    font-size: 12px !important;  
+    font-weight: bold; 
 
     p {
+      font-family: "Roboto Light";
       font-size: 12px !important;
       margin: 0;
       line-height: 16px !important;      
@@ -483,6 +531,19 @@ h3.heading {
     i {
       position: absolute;
       line-height: 3;
+    }
+
+    a{
+      color: $clr-light-orange;     
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 600;
+
+      &:hover {
+
+          color: $clr-dark-orange;
+
+      }
     }
   }
 
