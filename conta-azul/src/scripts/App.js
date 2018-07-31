@@ -34,7 +34,7 @@ class App extends Bootstrap {
 			self.layout.efects( FXWow );
 			self.layout.efects( Header );
 
-		}, 1000);	
+		}, 1200);	
 	}	
 }
 
