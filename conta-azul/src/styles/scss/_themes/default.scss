@@ -419,7 +419,8 @@
     text-transform: none;
     letter-spacing: inherit;
     padding: 16px 10px !important;
-
+    box-shadow: none;
+    
     &:hover {
     		color: #ffffff !important;
     		background: $clr-dark-orange;
