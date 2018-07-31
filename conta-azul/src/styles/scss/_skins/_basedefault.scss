@@ -24,7 +24,9 @@ a {
 }
 
 p {
-	font-size: 16px;
+
+  letter-spacing: 0.01em;  
+	font-size: 100%;
   color: $clr-grafiti-char;
 
 	span {
@@ -160,12 +162,12 @@ input, textarea, select {
 }
 
 input.newsletter {
-	/*width: 69%;*/
+	width: 74%;
 	border: 1px solid $clr-normal-blue;
 }
 
 input.send-news {
-	/*width: 30%;*/
+	width: 25%;
 	background: $clr-normal-gray !important;
 	color: $clr-grafiti-char !important;
 	margin: -4px 0px 0px 0px;
@@ -314,34 +316,17 @@ hr {
 
 section {
 
-	padding: 28px 0;
+	padding: 70px 0;
 	height: 100%;
 
 	.grid{
 		height: 100%;
 
 		.grid__item {
-			/*height: 100%;*/
+			
 		}
 	}
-
-	/*home.allColumn*/
-	/*&.section-top {		
-
-		height: 570px;		
-
-		.grid__item:nth-child(1){
-			width: 53.5%;			
-			background: $clr-light-gray;
-		}
-
-		.grid__item:nth-child(2){
-			width: 46.5%;			
-			background: url(../images/banner-top.png);
-    	background-size: auto 125%;
-    	background-position: top center;
-		}
-	}*/
+	
 
 	&.section-top {	
 			
@@ -356,8 +341,6 @@ section {
 
 	&.section-optimize {
 
-		padding: 80px 0;
-
 		.grid__item:nth-child(1){
 			width: 68%;	
 		}
@@ -370,21 +353,20 @@ section {
 		}
 	}
 
-	&.section-thumbs {
-			
-		padding-bottom: 120px;	
+	&.section-thumbs {			
+		/*padding-bottom: 120px;*/	
 	}
 
 	&.section-articles {
 		
 		background: $clr-light-gray;
 		padding: 30px 0 50px 0;
+    margin: 70px 0;
 	}
 
 	&.section-faq {
-
 		height:auto;
-		padding: 68px 0 100px 0;
+		
 	}
 
 }
@@ -404,12 +386,15 @@ section {
 	}
 }
 
-h2.heading {
-		font-size: 35px;
-  	line-height: 35px;
-  	margin: 30px 0 !important;
-  	color: $clr-dark-orange;
-  	font-weight: bold;
+h2.heading {	    
+
+    color: $clr-light-orange;
+    font-family: "Roboto Light";
+    font-weight: 500;
+    line-height: 1.3em;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    
 }
 
 h3.heading {
@@ -417,7 +402,8 @@ h3.heading {
   	line-height: 25px;
   	margin-bottom: 15px !important;
   	color: $clr-grafiti-char;
-  	font-weight: bold;
+  	font-family: "Roboto Regular";
+    font-weight: inherit;
 }
 
 .grid__item > p {
@@ -432,7 +418,8 @@ h3.heading {
 	p{
 		text-align: center;
 		width: 100%;
-		font-size: 18px;
+		font-size: 1.1em;
+    color: $clr-grafiti-char;
 	}
 
 	img{
@@ -762,7 +749,7 @@ i.icon-prev:before{
 .owl-nav { 
   position: absolute;  
   width: 100%;
-  top: 40%;
+  top: 50%;
 }
 
 /*.owl-prev, .owl-next {
@@ -772,22 +759,26 @@ i.icon-prev:before{
 .owl-prev {
   
    float: left;
+   
    img{  
-    position: absolute;    
-      width: 100px;
+      position: absolute;    
+      width: 50px;
       float: left;
-      left: -100px;        
+      left: -100px;
+      opacity: .8;        
   }
 }
 
 .owl-next {
 
   float: right;
+
   img{   
-  position: absolute;   
-      width: 100px;
+      position: absolute;   
+      width: 50px;
       float: right;
-      right: -100px;        
+      right: -100px; 
+      opacity: .8;       
   }
 }
 
