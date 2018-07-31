@@ -1,6 +1,6 @@
 
 body {	
-	background: $clr-white;	
+	background: #ffffff;	
 	color: $clr-grafiti-char;
 	font-weight: 500;
 	font-size: 1em;
@@ -327,7 +327,8 @@ section {
 
 	&.section-top {	
 			
-		background-image: linear-gradient( 0deg, #FFFFFF 0%, #f2f9fe 100% );
+		/*background-image: linear-gradient( 0deg, #FFFFFF 0%, #f2f9fe 100% );*/
+    background: #ffffff;
 		padding: 260px 0 0 0;	
 
 		.grid__item:nth-child(1){
