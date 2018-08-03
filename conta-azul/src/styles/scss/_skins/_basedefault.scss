@@ -164,7 +164,10 @@ input, textarea, select {
 input.newsletter {
 	width: 74%;
   height: 50px;
-	border: 1px solid $clr-light-orange;
+	border: 1px solid $clr-light-orange; 
+  font-size: 19px;
+  padding: 0 10px;
+  line-height: 1;
 }
 
 input.send-news {  
@@ -176,7 +179,7 @@ input.send-news {
   margin: 15px -4px;
   font-size: 12px;
   box-shadow: none;
-  top: -1px;
+  top: -3px;
   left: -1px;
 
 }
