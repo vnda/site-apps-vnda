@@ -1,1 +1,0 @@
-var globalJS={lazyLoad:{fetchContent:function(){return document.querySelectorAll("[data-src]")},init:function(t){var e=this.fetchContent();console.log(e),e.length>0&&setTimeout(function(){for(var t=0;t<e.length;t++)e[t].setAttribute("src",e[t].getAttribute("data-src"))},t)}}};globalJS.lazyLoad.init(1e3);
