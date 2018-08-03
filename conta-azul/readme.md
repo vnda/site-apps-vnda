@@ -4,10 +4,10 @@
 
 
 [![Javascript (ES6 / E2015)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![CSS (SASS)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+<!-- [![CSS (SASS)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![HTML (vr.5)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Node.JS](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Gulp](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Gulp](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework) -->
 
 
 Landpage desenvolvida com workflow Javascript ( ES6 / E2015 ) e preprocessador SASS.
@@ -23,6 +23,16 @@ Artigos da [Web Fundamentals](https://www.html5rocks.com/en/tutorials/webcompone
 Livro [Eloquent JavaScript](http://eloquentjavascript.net/) por Marijn Haverbeke.
 
 Livro [Learning JavaScript Design Patterns](http://eloquentjavascript.net/) por Addy Osmani’s.
+
+
+## Status
+
+- [ ] Build dist
+- [x] Dev src 
+- [ ] Core 
+- [x] suporte Jquery 
+- [x] suporte Vue
+- [ ] Estrutura de Classes Ok 
 
 
 ## Estrutura de Projeto 
