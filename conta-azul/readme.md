@@ -19,7 +19,9 @@ O Automatizador de tarefas utilizado neste projeto é o GULP, abaixo as linhas d
 Workflow construido a partir de :
 
 Artigos da [Web Fundamentals](https://www.html5rocks.com/en/tutorials/webcomponents/imports/) por Eric Bidelman.
+
 Livros : [Eloquent JavaScript](http://eloquentjavascript.net/) por Marijn Haverbeke.
+
          [Learning JavaScript Design Patterns](http://eloquentjavascript.net/) por Addy Osmani’s.
 
 
