@@ -1,16 +1,16 @@
-# Conta Azul
+# Conta Azul ('readme em construção')
 
 ## landpage 
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+
+[![Javascript (ES6 / E2015)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![CSS (SASS)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![HTML (vr.5)](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Node.JS](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
+[![Gulp](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 
 
 Landpage desenvolvida com workflow Javascript ( ES6 / E2015 ) e preprocessador SASS.
-
 O Automatizador de tarefas utilizado neste projeto é o GULP, abaixo as linhas de comando base para execução.
 
 

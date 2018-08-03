@@ -32,11 +32,11 @@ export const PagesController = {
 
 			setTimeout(() => {						
 										
-				let submitNews = res.querySelector(".send-news");	
+				// let submitNews = res.querySelector(".send-news");	
 
-				submitNews.addEventListener("click", (ev) => {			
-					ev.preventDefault();							
-				});			
+				// submitNews.addEventListener("click", (ev) => {			
+				// 	ev.preventDefault();							
+				// });			
 
 				jQuery(document).ready(function( $ ) {				
 		 
