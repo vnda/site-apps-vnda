@@ -41,8 +41,3 @@ class App extends Bootstrap {
 
 /* App */
 const app = new App();
-
-
-
-
-
