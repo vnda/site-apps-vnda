@@ -16,13 +16,11 @@ O Automatizador de tarefas utilizado neste projeto é o GULP, abaixo as linhas d
 
 ## Referência
 
-Workflow construido a partir :
+Workflow construido a partir de :
 
 Artigos da [Web Fundamentals](https://www.html5rocks.com/en/tutorials/webcomponents/imports/) por Eric Bidelman.
-
-Livro [Eloquent JavaScript](http://eloquentjavascript.net/) por Marijn Haverbeke.
-
-Livro [Learning JavaScript Design Patterns](http://eloquentjavascript.net/) por Addy Osmani’s.
+Livros : [Eloquent JavaScript](http://eloquentjavascript.net/) por Marijn Haverbeke.
+         [Learning JavaScript Design Patterns](http://eloquentjavascript.net/) por Addy Osmani’s.
 
 
 ## Status
@@ -37,17 +35,17 @@ Livro [Learning JavaScript Design Patterns](http://eloquentjavascript.net/) por 
 
 ## Estrutura de Projeto 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](#).
 
 
 ## Fluxo de Execução 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](#).
 
 
 ## Classes Principais 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](#).
 
 
 ## Setup
@@ -56,26 +54,9 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 ``` bash
 # install dependencies
-npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+npm install 
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-
-# emulate http server (production)
-npm install -g serve
-serve dist/
 
 ```
 
