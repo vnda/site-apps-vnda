@@ -7,8 +7,9 @@
 
 "use strict";
 
-import { ViewModel } from "./../../app/Core/ViewModel.js";
-import { Forms } from "./../../app/Utils/Forms.js";
+import { ViewModel }  from "./../../app/Core/ViewModel.js";
+import { Forms }      from "./../../app/Utils/Forms.js";
+import { SubmitForm } from "./components/SubmitForm.js";
 
 export const PagesController = {
 
@@ -54,6 +55,8 @@ export const PagesController = {
 					});				
 		 
 				});	
+
+				let submitForm = new SubmitForm;
 
 				componentHandler.upgradeDom();		
 

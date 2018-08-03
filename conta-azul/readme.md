@@ -1,4 +1,6 @@
-## App Conta Azul
+# Conta Azul
+
+## landpage 
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
@@ -39,8 +41,6 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 
 ## Setup
-
-# Node.js
 
 > É necessária a instalação do gerenciador de pacotes Node.
 
