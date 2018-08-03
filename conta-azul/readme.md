@@ -37,17 +37,17 @@ Artigos da [Web Fundamentals](https://www.html5rocks.com/en/tutorials/webcompone
 
 ## Estrutura de Projeto 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](#).
+Thank you for considering contributing to the framework! The contribution guide can be found in the [documentation](#).
 
 
 ## Fluxo de Execução 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](#).
+Thank you for considering contributing to the framework! The contribution guide can be found in the [documentation](#).
 
 
 ## Classes Principais 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](#).
+Thank you for considering contributing to the framework! The contribution guide can be found in the [documentation](#).
 
 
 ## Setup
