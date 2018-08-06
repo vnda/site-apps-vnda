@@ -1,9 +1,4 @@
-
-export const SubmitForm = function(){
-
-  console.log( " SubmitForm run " );
-
-//(function(global) {
+(function(global) {
 
   /* Serialize */
 
@@ -130,23 +125,24 @@ export const SubmitForm = function(){
 
     if (document.addEventListener) {
 
-      this.form.addEventListener('submit', function(e){
-        _this.onFormSubmit(e);
-      });
+        this.form.addEventListener('submit', function(e){
+         	_this.onFormSubmit(e);
+        });
 
     } else {
 
-      this.form.attachEvent('onsubmit', function(e){
-        _this.onFormSubmit(e);
-      });
-
+      	this.form.attachEvent('onsubmit', function(e){
+       		_this.onFormSubmit(e);
+      	});
     }
   
   };
 
-  extend(Mimi.Signups.EmbedValidation.prototype, {
+  extend(Mimi.Signups.EmbedValidation.prototype, {	
 
     initialize: function() {
+
+		console.log("init");
 
       this.form = document.getElementById('emasignup_form');
       this.submit = document.getElementById('webform_submit_button');
@@ -590,9 +586,4 @@ export const SubmitForm = function(){
     });
   }
 
-//})(this);
-
-}
-
-
-
+})(this);
